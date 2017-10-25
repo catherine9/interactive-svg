@@ -1,7 +1,27 @@
 #left-eye {
-  animation: 1s infinite;
+  animation: move-eyes 1s linear infinite alternate;
 }
 
 #right-eye {
-  animation: 1s infinite;
+  animation: move-eyes 1s linear infinite alternate;
+}
+
+#right-ear #left-ear {
+  transition: all 5s linear;
+}
+
+@keyframes move-eyes {
+  from {
+    transform: translate(14px);
+  }
+
+  to {
+    transform: translate(-14px);
+  }
+
+}
+
+#bear:hover #right-ear
+#bear:hover #left-ear {
+  transform: translate(0, -10px);
 }
