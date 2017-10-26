@@ -6,14 +6,16 @@
   animation: move-eyes 1s linear infinite alternate;
 }
 
-#left-ear, #right-ear{
+#left-ear, #right-ear {
   transform: translateY(0);
   transform-origin: 34px 34px;
   transition: all .5s linear;
 }
+
 #bear:hover #right-ear {
   transform: translateY(-11px);
 }
+
 #bear:hover #left-ear {
   transform: translateY(-11px);
 }
